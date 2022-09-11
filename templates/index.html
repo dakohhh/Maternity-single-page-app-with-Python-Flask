@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="description" content="CarryMe">
+   <meta name="keywords" content="carry,me,pregnancy,maternal,healthcare,hospital,treatment">
+   <title> Carry Me </title>
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+   <!-- bootstrap cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/css/bootstrap.min.css">
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+<style type="text/css">
+   .home{
+      background:url( {{ url_for('static', filename='pregnancy.jpg') }} ) no-repeat;
+      background-size: cover;
+      background-position: center;
+   }
+
+   .footer{
+      padding-top: 3rem;
+      /*background:url(../images/footer-bg.png) no-repeat;*/
+      background-size: cover;
+      background-position: center;
+   }
+
+   .footer .box-container{
+      display: flex;
+      flex-wrap: wrap;
+   }
+
+   .footer .box-container .box{
+      flex: 1 1 25rem;
+      margin :2rem;
+   }
+
+   .footer .box-container .box h3{
+      font-size: 2.5rem;
+      padding: 1rem 0;
+      color: #fff;
+      text-decoration: underline;
+      text-underline-offset: 1rem;
+   }
+
+   .footer .box-container .box p{
+      font-size: 1.5rem;
+      padding:.5rem 0;
+      color:#eee;
+   }
+
+   .footer .box-container .box a{
+      display: block;
+      font-size: 1.5rem;
+      padding: .5rem 0;
+      color: #eee;
+   }
+
+   .footer .box-container .box a:hover{
+      text-decoration: underline;
+   }
+
+   .footer .box-container .box .info{
+      display: flex;
+      align-items: center;
+   }
+
+   .footer .credit{
+      font-size: 2rem;
+      font-weight: normal;
+      letter-spacing: .1rem;
+      color: black;
+      border-top: .1rem solid #fff5;
+      padding:2.5rem 1rem;
+      text-align: center;
+   }
+</style>
+
+<body>
+   
+<!-- Header -->
+<header class="header fixed-top">
+
+   <div class="container">
+
+      <div class="row align-items-center justify-content-between">
+
+         <a href="#home" class="logo"> Carry <span> Me </span></a>
+
+         <nav class="nav">
+            <a href="#home">home</a>
+            <a href="#about">about</a>
+            <a href="#services">services</a>
+            <a href="#contact">contact</a>
+         </nav>
+
+         <a href="#contact" class="link-btn">make appointment</a>
+
+         <div id="menu-btn" class="fas fa-bars"></div>
+
+      </div>
+
+   </div>
+
+</header>
+
+<!-- Home section -->
+<section class="home" id="home">
+
+   <div class="container">
+
+      <div class="row min-vh-100 align-items-center">
+         <div class="content text-center text-md-left">
+            <h3>let us Carry you with "CarryMe"</h3>
+            <p style="font-size: 19px"> CarryMe is a plaform for help out in the maternal healthcare challenge in Nigeria.</p>
+            <a href="#contact" class="link-btn"> CarryMe </a>
+         </div>
+      </div>
+
+   </div>
+
+</section>
+
+<!-- About section -->
+<section class="about" id="about">
+   <div class="container">
+      <div class="row align-items-center">
+         <div class="col-md-6 image">
+            <img src="{{ url_for('static', filename='images/omo.jpg') }}" class="w-100 mb-5 mb-md-0" alt="">
+         </div>
+
+         <div class="col-md-6 content">
+            <span> About Us </span>
+            <h3> The Best Healthcare For Your Wife, Daughter, Mother, etc</h3>
+            <p> We are very unique in delivering the perfect healthcare for women most especially when they are pregnant. We have modern day technologies and expert doctors that will give them safe treatment and make them feel like home with us </p>
+            <a href="#contact" class="link-btn"> make appointment </a>
+         </div>
+      </div>
+   </div>
+</section>
+
+<!-- Services -->
+<section class="services" id="services">
+
+   <h1 class="heading">our services</h1>
+
+   <div class="box-container container">
+
+      <div class="box">
+         <img src="images/" alt="">
+         <h3> Pregnancy specialist</h3>
+         <p> We have group of highly trained experts that are ready and willing to give you the safe treatment that you need and desire. </p>
+      </div>
+
+      <div class="box">
+         <img src="images/" alt="">
+         <h3> Emergency </h3>
+         <p> In case of emergency, we are always ready to give our services out and a complemetary discount for all emergencies. </p>
+      </div>
+
+      <div class="box">
+         <img src="images/" alt="">
+         <h3> Discounts </h3>
+         <p> We give 10 percent discount when emergency cases are reported and a 50 percent discount when there's an annual festival  </p>
+      </div>
+
+      <div class="box">
+         <img src="images/" alt="">
+         <h3> Online Services </h3>
+         <p> You can book an appointment online here on our platform in order to see the specialist. </p>
+      </div>
+
+      <div class="box">
+         <img src="images/" alt="">
+         <h3>Live Pregnancy advisory</h3>
+         <p> Our platform enables you to get top live advice from top experts from round the world in order for you to take care of yourself till safety is gueranteed. </p>
+      </div>
+
+      <div class="box">
+         <img src="images/" alt="">
+         <h3> Genitals inspection </h3>
+         <p> Everyone needs to get their genitals in check most especially women. We are very trustworthy and will not give or sell any personal information to strangers. Your information is safe with us. </p>
+      </div>
+
+   </div>
+
+</section>
+
+<!-- Contact -->
+<section class="contact" id="contact">
+
+   <h1 class="heading">make appointment</h1>
+
+   <form action="" method="post">
+      <span>your name :</span>
+      <input type="text" name="name" placeholder="enter your name" class="box" required>
+      <span>your email :</span>
+      <input type="email" name="email" placeholder="enter your email" class="box" required>
+      <span>your number :</span>
+      <input type="text" name="number" placeholder="enter your number" class="box" required>
+      <span>appointment date :</span>
+      <input type="datetime-local" name="date" class="box" required>
+      <input type="submit" value="make appointment" name="submit" class="link-btn">
+   </form>  
+
+</section>
+
+  <!-- footer  -->
+  <div class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3 style="color: black">about us</h3>
+                <p style="color: black"> We have created a platform to help out in the maternal healthcare challenge in Nigeria. </p>
+            </div>
+
+            <div class="box">
+                <h3 style="color: black">quick links</h3>
+                <a href="#home" style="color: black">Home</a>
+                <a href="#services" style="color: black"> Services </a>
+                <a href="#about" style="color: black"> About </a>
+                <a href="#contact" style="color: black"> Contact </a>
+            </div>
+
+            <div class="box">
+                <h3 style="color: black"> follow us </h3>
+                    <a href="#" style="color: black">facebook</a>
+                    <a href="#" style="color: black">instagram</a>
+                    <a href="#" style="color: black">pinterest</a>
+                    <a href="#" style="color: black"s>twitter</a>
+            </div>
+
+            <div class="box">
+                <h3 style="color: black">contact info</h3>
+                    <div class="info">
+                        <i class="fas fa-phone"></i>
+                        <p style="color: black"> 08101295652 <br> 081443292 </p>
+                    </div>
+                    <div class="info">
+                        <i class="fas fa-envelope"></i>
+                        <p style="color: black"> cussmeritmohammed@gmail.com <br> marvelloussolomon49@gmail.com <br> wiizzydreadmill@gmail.com <br> toluadtech@gmail.com </p>
+                    </div>
+                    <div class="info">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p style="color: black"> Ogun state, Nigeria - 400104 </p>
+                    </div>
+            </div>       
+        </div>
+
+        <!-- end-credit -->
+        <h1 class="credit"> Built By Code-In </a> | &#169; 2022 All Rights Reserved </h1>
+    </div>
+
+<!-- custom js file link  -->
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
